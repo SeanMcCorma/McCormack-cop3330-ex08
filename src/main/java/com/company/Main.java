@@ -18,7 +18,7 @@ public class Main {
         int slices = Integer.parseInt(scan.nextLine());
         int total_slices=pizzas*slices;
         System.out.println(people + " people with "+pizzas+" pizzas ("+total_slices+")");
-        int pieces = total_slices/people;
+        int pieces = (int) Math.floor(total_slices/people);
         System.out.println("Each person gets "+pieces+" pieves of pizza.");
         int leftover= total_slices-(pieces*people);
         System.out.println("There are "+leftover+" leftover pieces");
